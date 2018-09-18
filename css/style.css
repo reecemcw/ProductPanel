@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body{
+    font-family: Roboto;
+    background: #353535;
+}
+
+.container{
+    width: 280px;
+    height: 500px;
+    margin: 60px auto;
+    margin-left: 1000px;
+} 
+
+.card{
+    -webkit-box-shadow: -30px 20px 22px -1px rgba(0,0,0,0.51);
+    -moz-box-shadow: -30px 20px 22px -1px rgba(0,0,0,0.51);
+    box-shadow: -30px 20px 22px -1px rgba(0,0,0,0.51);
+}
+
+.card-head{
+    position: relative;
+    height: 340px;
+    background: #6605058a;
+    background: -moz-linear-gradient(-45deg, #6605058a 8%, #983737c7 83%); /*  FF3.6-15  */
+    background: -webkit-linear-gradient(-45deg, #6605058a 8%, #983737c7 83%); /*  Chrome10-25, Safari5.1-6  */
+    background: linear-gradient(135deg, #0c09098a 8%, #d83131 83%); /*  W3C, IE10+, FF16+, Chrome 26+, Opera12+, Safari7+  */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6605058a', endColorStr='#fff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient  */
+    border-radius: 25px 25px 0 0;
+}
+
+.card-logo{
+    width: 35px;
+    margin: 20px;
+    border-radius: 4px;
+}
+
+.product-img {
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    margin-left: 100px;
+    width: 280px;
+}
+
+.product-detail {
+    padding: 0 20px;
+    font-size: 11px;
+    color: #fff;
+}
+
+.product-detail h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.back-text{
+    font-family: 'Italianno';
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 35px;
+    margin-top: 20px;
+    opacity: 0.1;
+}
+
+.card-body{
+    height: 252px;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+}
+
+.product-title{
+    padding: 20px 20px 5px 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product title b {
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+
+.badge{
+    position: relative;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+    background: rgba(10, 60, 99, 0.693);
+    padding: 2px 5px;
+    border-radius: 5px;
+    top: -2px;
+    margin-left: 5px;
+}
+
+.product-caption{
+    display: block;
+    padding: 0 20px;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.product-rating{
+    padding: 0 20px;
+    font-size: 11px;
+}
+
+.product-rating i.o{
+    color: #acacab;
+}
+
+.product-size h4{
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.ul-size{
+    margin-left: 15px;
+}
+
+.ul-size li {
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+}
+
+.ul-size li a {
+    text-align: center;
+    line-height: 23px;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 11px;
+    width: 22px;
+    height: 22px;
+    border-radius: 22px;
+}
+
+.ul-size li a.active{
+    background: #928b8a;
+    color: #fff;
+}
+
+.product-size:before, .product-size:after{
+    contents: '';
+    display: block;
+    clear: both;
+}
+
+.product-color h4{
+    font-size: 11px;
+    padding: 0 21px;
+    margin-top: 48px;
+    padding-bottom: 28x;
+    text-transform: uppercase;
+}
+
+.ul-colour{
+    margin-left: 27px;
+}
+
+.ul-colour li{
+    list-style: none;
+    float: left;
+    margin-right: 28px;
+    margin-top: 9px
+}
+
+.ul-colour li a{
+    display: inline-block;
+    width: auto;
+    height: 16px;
+    text-decoration:  none;
+    border-radius: 100%;
+    font-size:  11px;
+    margin-left: -6px;
+    color: #000;
+}
+
+
+.ul-colour li a.new:hover{
+    font-size: 13px;
+    width: 24px;
+}
+
+.ul-colour li a.used:hover{
+    font-size: 13px;
+    width: 27.3px;
+}
+
+.ul-colour li a.active{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.ul-colour li a.active:after{
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width:  24px;
+    height:24px;
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+
+.product-price{
+    position: absolute;
+    background: rgb(56, 90, 79);
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+    margin-left: 13px;
+    box-shadow: -10px 20px 15px -10px rgba(0, 0, 0, 0.65);
+}
+
+.product-price:hover{
+    background: #1d5468eb;
+    padding: 8px 22px;
+    cursor:pointer;
+}
+
+.product-price b {
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
